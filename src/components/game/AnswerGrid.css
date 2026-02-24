@@ -1,0 +1,43 @@
+.answer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.answer-btn {
+  min-height: 72px;
+  border-radius: var(--border-radius);
+  border: 2px solid #E0E0E0;
+  background: var(--color-card);
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+.answer-btn:active:not(:disabled) { transform: scale(0.95); }
+.answer-btn:disabled { cursor: default; }
+
+.answer-btn.correct {
+  background: var(--color-correct);
+  color: white;
+  border-color: var(--color-correct);
+  animation: pulse 0.5s;
+}
+.answer-btn.wrong {
+  background: var(--color-wrong);
+  color: white;
+  border-color: var(--color-wrong);
+  animation: shake 0.5s;
+}
+.answer-btn.show-correct {
+  background: var(--color-correct);
+  color: white;
+  border-color: var(--color-correct);
+  animation: pulse 0.5s;
+}

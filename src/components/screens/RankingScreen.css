@@ -1,0 +1,40 @@
+.ranking-list { margin: 8px 0; }
+.ranking-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--color-card);
+  border-radius: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.ranking-item.me {
+  border: 2px solid var(--color-nav-active);
+  background: var(--color-multiplication-light);
+}
+.ranking-pos {
+  font-size: 20px;
+  font-weight: 800;
+  width: 40px;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+.ranking-avatar { font-size: 28px; margin: 0 12px; }
+.ranking-name { flex: 1; font-weight: 700; font-size: 16px; }
+.ranking-score { font-size: 20px; font-weight: 800; }
+
+.my-rank-card {
+  text-align: center;
+  padding: 12px;
+  background: var(--color-multiplication-light);
+  border-radius: 12px;
+  margin-top: 8px;
+}
+.my-rank-label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+.my-rank-value {
+  font-size: 22px;
+  font-weight: 800;
+}

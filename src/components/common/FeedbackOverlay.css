@@ -1,0 +1,17 @@
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-width);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  pointer-events: none;
+}
+.feedback-icon {
+  font-size: 120px;
+}

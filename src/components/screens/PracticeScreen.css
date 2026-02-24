@@ -1,0 +1,27 @@
+.practice-screen {
+  padding-bottom: calc(var(--nav-height) + 24px);
+}
+.practice-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.streak-badge {
+  background: linear-gradient(135deg, #FF6B35, #F7C948);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.back-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 4px 0;
+  margin-bottom: 4px;
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --color-bg: #FAFAFA;
+  --color-card: #FFFFFF;
+  --color-text: #212121;
+  --color-text-secondary: #757575;
+  --color-correct: #4CAF50;
+  --color-wrong: #F44336;
+  --color-star: #FFD700;
+  --color-nav-bg: #FFFFFF;
+  --color-nav-active: #FF9800;
+  --font-family: 'Nunito', 'Segoe UI', sans-serif;
+
+  --color-addition: #4CAF50;
+  --color-addition-light: #C8E6C9;
+  --color-addition-dark: #2E7D32;
+  --color-subtraction: #2196F3;
+  --color-subtraction-light: #BBDEFB;
+  --color-subtraction-dark: #1565C0;
+  --color-multiplication: #FF9800;
+  --color-multiplication-light: #FFE0B2;
+  --color-multiplication-dark: #E65100;
+  --color-division: #9C27B0;
+  --color-division-light: #E1BEE7;
+  --color-division-dark: #6A1B9A;
+
+  --border-radius: 16px;
+  --max-width: 480px;
+  --nav-height: 64px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: var(--max-width);
+  min-height: 100vh;
+  position: relative;
+}
+
+.screen {
+  padding: 16px;
+  padding-bottom: calc(var(--nav-height) + 24px);
+}
+
+/* ── Inputs ── */
+.input-field {
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  border: 2px solid #E0E0E0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  margin-bottom: 12px;
+  outline: none;
+  background: var(--color-card);
+  color: var(--color-text);
+  transition: border-color 0.2s;
+}
+.input-field:focus {
+  border-color: var(--color-nav-active);
+}
+
+/* ── Big Button ── */
+.big-btn {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border-radius: var(--border-radius);
+  border: none;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: all 0.2s;
+  text-align: center;
+}
+.big-btn:active { transform: scale(0.97); }
+.big-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.big-btn.primary { background: var(--color-correct); color: white; }
+.big-btn.secondary { background: var(--color-subtraction); color: white; }
+.big-btn.accent { background: var(--color-nav-active); color: white; }
+.big-btn.outline {
+  background: var(--color-card);
+  color: var(--color-text);
+  border: 2px solid #DDD;
+}
+.big-btn.danger { background: var(--color-wrong); color: white; }
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  margin-bottom: 8px;
+}
+.header h1 { font-size: 22px; font-weight: 800; }
+
+/* ── Section Label ── */
+.section-label {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 16px 0 12px;
+}
+
+/* ── Link Text ── */
+.link-text {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  margin: 16px 0;
+}
+.link-text a {
+  color: var(--color-subtraction);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--color-card);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+}

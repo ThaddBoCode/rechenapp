@@ -1,0 +1,51 @@
+.result-screen { padding-bottom: 24px !important; }
+.result-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 24px 0 8px;
+}
+.result-card {
+  background: var(--color-card);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  text-align: center;
+  margin: 16px 0;
+}
+.result-emoji { font-size: 48px; margin-bottom: 8px; }
+.result-score {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--color-correct);
+}
+.result-label {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+.result-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+.stat-box {
+  background: var(--color-bg);
+  border-radius: 12px;
+  padding: 12px;
+}
+.stat-value { font-size: 24px; font-weight: 800; }
+.stat-label { font-size: 12px; color: var(--color-text-secondary); }
+
+.reward-unlock-banner {
+  background: linear-gradient(135deg, #FFF3E0, #FFF8E1);
+  border: 2px solid var(--color-star);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  text-align: center;
+  margin: 16px 0;
+}
+.reward-unlock-icon { font-size: 40px; margin-bottom: 8px; }
+.reward-unlock-text { font-size: 15px; }
+.reward-unlock-text strong { display: block; font-size: 17px; margin-bottom: 4px; }
