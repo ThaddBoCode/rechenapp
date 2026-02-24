@@ -56,18 +56,20 @@ export default function ResultScreen() {
               <div key={i}>{title}</div>
             ))}
           </div>
-          <button className="big-btn accent" onClick={() => navigate('/rewards')} style={{ marginTop: '8px' }}>
+          <button className="big-btn accent" onClick={() => navigate('/rewards')} style={{ marginTop: '6px' }}>
             Video anschauen 🎥
           </button>
         </div>
       )}
 
-      <button className="big-btn primary" onClick={handleRetry}>
-        Nochmal! 🔄
-      </button>
-      <button className="big-btn outline" onClick={() => navigate('/')}>
-        Zur Startseite 🏠
-      </button>
+      <div className="result-actions">
+        <button className="big-btn primary" onClick={handleRetry}>
+          Nochmal! 🔄
+        </button>
+        <button className="big-btn outline" onClick={() => navigate('/')}>
+          Zur Startseite 🏠
+        </button>
+      </div>
     </div>
   );
 }
