@@ -31,16 +31,16 @@
 }
 
 .op-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
-  padding: 0 8px;
 }
 
 .op-tile {
   border-radius: var(--border-radius);
-  padding: 12px 8px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +50,6 @@
   position: relative;
   font-family: var(--font-family);
   background: none;
-  aspect-ratio: 1;
 }
 .op-tile.selected {
   border-color: var(--color-text);
