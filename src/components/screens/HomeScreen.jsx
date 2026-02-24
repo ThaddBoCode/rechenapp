@@ -64,7 +64,6 @@ export default function HomeScreen() {
           >
             {selectedOps.includes(op.key) && <span className="op-check">✓</span>}
             <span className="op-emoji">{op.emoji}</span>
-            <span className="op-label">{op.label}</span>
           </button>
         ))}
       </div>

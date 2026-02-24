@@ -102,7 +102,6 @@ export default function PracticeScreen() {
           <div className="streak-badge animate-bounce-in">🔥 {streak}</div>
         )}
       </div>
-      <button className="back-btn" onClick={() => navigate('/')}>← Zurück</button>
       <ProblemCard problem={problem} />
       <AnswerGrid
         choices={choices}
